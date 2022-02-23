@@ -7,9 +7,9 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteCond %{REQUEST_FILENAME} !-d 
 RewriteRule . /index.php [L] 
-<FilesMatch “\.(?:inc|php|phtml|php5|shtml|py|rb)$”>
-Order allow,deny
-Deny from all
-</FilesMatch>
+<Files *.php>
+deny from all
+
+</Files>
  
 # END WordPress
